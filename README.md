@@ -1,5 +1,5 @@
-#Spring Boot ManyToOne Unidirectional Mapping(Student --> University) Example
------------------------------------------------------------------------------
+#Spring Boot ManyToOne Unidirectional Mapping(Student --> University) Using Annotations
+---------------------------------------------------------------------------------------
 
 1) In Many-To-One Unidirectional mapping, one table has a foreign key column that references the primary key of associated table.
 By Unidirectional relationship means only one side navigation is possible (STUDENT to UNIVERSITY in this example).
