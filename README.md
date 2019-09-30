@@ -1,4 +1,5 @@
 #Spring Boot ManyToOne Unidirectional Mapping(Student --> University) Example
+-----------------------------------------------------------------------------
 
 1) In Many-To-One Unidirectional mapping, one table has a foreign key column that references the primary key of associated table.
 By Unidirectional relationship means only one side navigation is possible (STUDENT to UNIVERSITY in this example).
@@ -11,6 +12,9 @@ Student.java
 @ManyToOne(optional = false,cascade = CascadeType.ALL)
 @JoinColumn(name = "UNIVERSITY_STU_ID")
 private University university;
+
+Explanation:
+------------
 
 @ManyToOne indicates that Many student tuples can refer to one University tuple.
 Also note that we have provided optional=false means this relationship becomes mandatory , no student row can be saved without a university tuple reference.
